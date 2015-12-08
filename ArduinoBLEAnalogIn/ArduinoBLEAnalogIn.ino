@@ -13,6 +13,7 @@ void setup() {
 }
 
 void loop() {
+  delay(250);
   uint16_t value = analogRead(A0); 
   Serial.println(value);
   if(ble_connected()) {
