@@ -36,11 +36,12 @@ class ViewController: UIViewController, BLEDelegate {
         bleShield.controlSetup()
         bleShield.delegate = self
         BLEShieldScan(view)
-//        analogLabel.removeFromSuperview()
-//        analogLabel.text = "Reading Input..."
-//        analogLabel.sizeToFit()
-//        analogLabel.center = CGPoint(x: screenSize.midX, y: screenSize.midY)
-//        view.addSubview(analogLabel)
+        analogLabel.removeFromSuperview()
+        analogLabel.text = "Reading Input..."
+        analogLabel.sizeToFit()
+        analogLabel.frame.origin = CGPointZero
+        analogLabel.frame.origin.y += 15
+        view.addSubview(analogLabel)
         
         wheelchair.removeFromSuperview()
         wheelchair.image = UIImage(named: "wheelchair")
