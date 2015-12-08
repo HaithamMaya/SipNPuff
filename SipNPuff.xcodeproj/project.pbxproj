@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF21F35F1C13EDE3009A7F8A /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21F35D1C13EDE3009A7F8A /* BLE.m */; };
+		CF21F3601C13EDE3009A7F8A /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21F35D1C13EDE3009A7F8A /* BLE.m */; };
+		CF21F3611C13EDE3009A7F8A /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21F35D1C13EDE3009A7F8A /* BLE.m */; };
+		CFBFC5381C13554500E1AF1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC5371C13554500E1AF1D /* AppDelegate.swift */; };
+		CFBFC53A1C13554500E1AF1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC5391C13554500E1AF1D /* ViewController.swift */; };
+		CFBFC53D1C13554500E1AF1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC53B1C13554500E1AF1D /* Main.storyboard */; };
+		CFBFC5401C13554500E1AF1D /* SipNPuff.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC53E1C13554500E1AF1D /* SipNPuff.xcdatamodeld */; };
+		CFBFC5421C13554500E1AF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC5411C13554500E1AF1D /* Assets.xcassets */; };
+		CFBFC5451C13554500E1AF1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBFC5431C13554500E1AF1D /* LaunchScreen.storyboard */; };
+		CFBFC5501C13554500E1AF1D /* SipNPuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC54F1C13554500E1AF1D /* SipNPuffTests.swift */; };
+		CFBFC55B1C13554500E1AF1D /* SipNPuffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFC55A1C13554500E1AF1D /* SipNPuffUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFBFC54C1C13554500E1AF1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFBFC52C1C13554500E1AF1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFBFC5331C13554500E1AF1D;
+			remoteInfo = SipNPuff;
+		};
+		CFBFC5571C13554500E1AF1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFBFC52C1C13554500E1AF1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFBFC5331C13554500E1AF1D;
+			remoteInfo = SipNPuff;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF21F3591C13EDE2009A7F8A /* SipNPuff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SipNPuff-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF21F35A1C13EDE2009A7F8A /* SipNPuffTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SipNPuffTests-Bridging-Header.h"; path = "../SipNPuff/SipNPuffTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF21F35B1C13EDE2009A7F8A /* SipNPuffUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SipNPuffUITests-Bridging-Header.h"; path = "../SipNPuff/SipNPuffUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF21F35C1C13EDE3009A7F8A /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		CF21F35D1C13EDE3009A7F8A /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		CF21F35E1C13EDE3009A7F8A /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		CFBFC5341C13554500E1AF1D /* SipNPuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SipNPuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBFC5371C13554500E1AF1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFBFC5391C13554500E1AF1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFBFC53C1C13554500E1AF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFBFC53F1C13554500E1AF1D /* SipNPuff.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SipNPuff.xcdatamodel; sourceTree = "<group>"; };
+		CFBFC5411C13554500E1AF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFBFC5441C13554500E1AF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFBFC5461C13554500E1AF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBFC54B1C13554500E1AF1D /* SipNPuffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SipNPuffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBFC54F1C13554500E1AF1D /* SipNPuffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipNPuffTests.swift; sourceTree = "<group>"; };
+		CFBFC5511C13554500E1AF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBFC5561C13554500E1AF1D /* SipNPuffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SipNPuffUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBFC55A1C13554500E1AF1D /* SipNPuffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipNPuffUITests.swift; sourceTree = "<group>"; };
+		CFBFC55C1C13554500E1AF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBFC5681C1356A100E1AF1D /* ObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveC.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFBFC5311C13554500E1AF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFC5481C13554500E1AF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFC5531C13554500E1AF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF21F3621C13EDEC009A7F8A /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				CF21F35C1C13EDE3009A7F8A /* BLE.h */,
+				CF21F35D1C13EDE3009A7F8A /* BLE.m */,
+				CF21F35E1C13EDE3009A7F8A /* BLEDefines.h */,
+			);
+			name = BLE;
+			sourceTree = "<group>";
+		};
+		CFBFC52B1C13554500E1AF1D = {
+			isa = PBXGroup;
+			children = (
+				CFBFC5361C13554500E1AF1D /* SipNPuff */,
+				CFBFC54E1C13554500E1AF1D /* SipNPuffTests */,
+				CFBFC5591C13554500E1AF1D /* SipNPuffUITests */,
+				CFBFC5351C13554500E1AF1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFBFC5351C13554500E1AF1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFBFC5341C13554500E1AF1D /* SipNPuff.app */,
+				CFBFC54B1C13554500E1AF1D /* SipNPuffTests.xctest */,
+				CFBFC5561C13554500E1AF1D /* SipNPuffUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFBFC5361C13554500E1AF1D /* SipNPuff */ = {
+			isa = PBXGroup;
+			children = (
+				CF21F3621C13EDEC009A7F8A /* BLE */,
+				CF21F3591C13EDE2009A7F8A /* SipNPuff-Bridging-Header.h */,
+				CFBFC5681C1356A100E1AF1D /* ObjectiveC.h */,
+				CFBFC5371C13554500E1AF1D /* AppDelegate.swift */,
+				CFBFC5391C13554500E1AF1D /* ViewController.swift */,
+				CFBFC53B1C13554500E1AF1D /* Main.storyboard */,
+				CFBFC5411C13554500E1AF1D /* Assets.xcassets */,
+				CFBFC5431C13554500E1AF1D /* LaunchScreen.storyboard */,
+				CFBFC5461C13554500E1AF1D /* Info.plist */,
+				CFBFC53E1C13554500E1AF1D /* SipNPuff.xcdatamodeld */,
+			);
+			path = SipNPuff;
+			sourceTree = "<group>";
+		};
+		CFBFC54E1C13554500E1AF1D /* SipNPuffTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF21F35A1C13EDE2009A7F8A /* SipNPuffTests-Bridging-Header.h */,
+				CFBFC54F1C13554500E1AF1D /* SipNPuffTests.swift */,
+				CFBFC5511C13554500E1AF1D /* Info.plist */,
+			);
+			path = SipNPuffTests;
+			sourceTree = "<group>";
+		};
+		CFBFC5591C13554500E1AF1D /* SipNPuffUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF21F35B1C13EDE2009A7F8A /* SipNPuffUITests-Bridging-Header.h */,
+				CFBFC55A1C13554500E1AF1D /* SipNPuffUITests.swift */,
+				CFBFC55C1C13554500E1AF1D /* Info.plist */,
+			);
+			path = SipNPuffUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFBFC5331C13554500E1AF1D /* SipNPuff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBFC55F1C13554500E1AF1D /* Build configuration list for PBXNativeTarget "SipNPuff" */;
+			buildPhases = (
+				CFBFC5301C13554500E1AF1D /* Sources */,
+				CFBFC5311C13554500E1AF1D /* Frameworks */,
+				CFBFC5321C13554500E1AF1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SipNPuff;
+			productName = SipNPuff;
+			productReference = CFBFC5341C13554500E1AF1D /* SipNPuff.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFBFC54A1C13554500E1AF1D /* SipNPuffTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBFC5621C13554500E1AF1D /* Build configuration list for PBXNativeTarget "SipNPuffTests" */;
+			buildPhases = (
+				CFBFC5471C13554500E1AF1D /* Sources */,
+				CFBFC5481C13554500E1AF1D /* Frameworks */,
+				CFBFC5491C13554500E1AF1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFBFC54D1C13554500E1AF1D /* PBXTargetDependency */,
+			);
+			name = SipNPuffTests;
+			productName = SipNPuffTests;
+			productReference = CFBFC54B1C13554500E1AF1D /* SipNPuffTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFBFC5551C13554500E1AF1D /* SipNPuffUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBFC5651C13554500E1AF1D /* Build configuration list for PBXNativeTarget "SipNPuffUITests" */;
+			buildPhases = (
+				CFBFC5521C13554500E1AF1D /* Sources */,
+				CFBFC5531C13554500E1AF1D /* Frameworks */,
+				CFBFC5541C13554500E1AF1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFBFC5581C13554500E1AF1D /* PBXTargetDependency */,
+			);
+			name = SipNPuffUITests;
+			productName = SipNPuffUITests;
+			productReference = CFBFC5561C13554500E1AF1D /* SipNPuffUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFBFC52C1C13554500E1AF1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = haithammaaieh;
+				TargetAttributes = {
+					CFBFC5331C13554500E1AF1D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					CFBFC54A1C13554500E1AF1D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = CFBFC5331C13554500E1AF1D;
+					};
+					CFBFC5551C13554500E1AF1D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = CFBFC5331C13554500E1AF1D;
+					};
+				};
+			};
+			buildConfigurationList = CFBFC52F1C13554500E1AF1D /* Build configuration list for PBXProject "SipNPuff" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFBFC52B1C13554500E1AF1D;
+			productRefGroup = CFBFC5351C13554500E1AF1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFBFC5331C13554500E1AF1D /* SipNPuff */,
+				CFBFC54A1C13554500E1AF1D /* SipNPuffTests */,
+				CFBFC5551C13554500E1AF1D /* SipNPuffUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFBFC5321C13554500E1AF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBFC5451C13554500E1AF1D /* LaunchScreen.storyboard in Resources */,
+				CFBFC5421C13554500E1AF1D /* Assets.xcassets in Resources */,
+				CFBFC53D1C13554500E1AF1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFC5491C13554500E1AF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFC5541C13554500E1AF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFBFC5301C13554500E1AF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBFC53A1C13554500E1AF1D /* ViewController.swift in Sources */,
+				CFBFC5381C13554500E1AF1D /* AppDelegate.swift in Sources */,
+				CFBFC5401C13554500E1AF1D /* SipNPuff.xcdatamodeld in Sources */,
+				CF21F35F1C13EDE3009A7F8A /* BLE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFC5471C13554500E1AF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBFC5501C13554500E1AF1D /* SipNPuffTests.swift in Sources */,
+				CF21F3601C13EDE3009A7F8A /* BLE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBFC5521C13554500E1AF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBFC55B1C13554500E1AF1D /* SipNPuffUITests.swift in Sources */,
+				CF21F3611C13EDE3009A7F8A /* BLE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFBFC54D1C13554500E1AF1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFBFC5331C13554500E1AF1D /* SipNPuff */;
+			targetProxy = CFBFC54C1C13554500E1AF1D /* PBXContainerItemProxy */;
+		};
+		CFBFC5581C13554500E1AF1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFBFC5331C13554500E1AF1D /* SipNPuff */;
+			targetProxy = CFBFC5571C13554500E1AF1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFBFC53B1C13554500E1AF1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBFC53C1C13554500E1AF1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFBFC5431C13554500E1AF1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBFC5441C13554500E1AF1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFBFC55D1C13554500E1AF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFBFC55E1C13554500E1AF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFBFC5601C13554500E1AF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SipNPuff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithammaaieh.SipNPuff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SipNPuff/SipNPuff-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFBFC5611C13554500E1AF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SipNPuff/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithammaaieh.SipNPuff;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SipNPuff/SipNPuff-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CFBFC5631C13554500E1AF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SipNPuffTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithammaaieh.SipNPuffTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SipNPuff/SipNPuffTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SipNPuff.app/SipNPuff";
+			};
+			name = Debug;
+		};
+		CFBFC5641C13554500E1AF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SipNPuffTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithammaaieh.SipNPuffTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SipNPuff/SipNPuffTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SipNPuff.app/SipNPuff";
+			};
+			name = Release;
+		};
+		CFBFC5661C13554500E1AF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SipNPuffUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithammaaieh.SipNPuffUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SipNPuff/SipNPuffUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = SipNPuff;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CFBFC5671C13554500E1AF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = SipNPuffUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haithammaaieh.SipNPuffUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SipNPuff/SipNPuffUITests-Bridging-Header.h";
+				TEST_TARGET_NAME = SipNPuff;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFBFC52F1C13554500E1AF1D /* Build configuration list for PBXProject "SipNPuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBFC55D1C13554500E1AF1D /* Debug */,
+				CFBFC55E1C13554500E1AF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBFC55F1C13554500E1AF1D /* Build configuration list for PBXNativeTarget "SipNPuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBFC5601C13554500E1AF1D /* Debug */,
+				CFBFC5611C13554500E1AF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBFC5621C13554500E1AF1D /* Build configuration list for PBXNativeTarget "SipNPuffTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBFC5631C13554500E1AF1D /* Debug */,
+				CFBFC5641C13554500E1AF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBFC5651C13554500E1AF1D /* Build configuration list for PBXNativeTarget "SipNPuffUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBFC5661C13554500E1AF1D /* Debug */,
+				CFBFC5671C13554500E1AF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFBFC53E1C13554500E1AF1D /* SipNPuff.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFBFC53F1C13554500E1AF1D /* SipNPuff.xcdatamodel */,
+			);
+			currentVersion = CFBFC53F1C13554500E1AF1D /* SipNPuff.xcdatamodel */;
+			path = SipNPuff.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFBFC52C1C13554500E1AF1D /* Project object */;
+}
