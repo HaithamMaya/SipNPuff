@@ -13,25 +13,54 @@ class ViewController: UIViewController, BLEDelegate {
     let wheelchair = UIImageView()
     var chairAngle:CGFloat = 0
     let rotationConstant:CGFloat = 10
-    let moveConstant: CGFloat = 10
+    let moveConstant: CGFloat = 30
     let center = UIView()
     let bleShield = BLE()
     var rssiTimer = NSTimer()
     let analogLabel = UILabel()
     var analogReading:Float = 0
-    let puffMin = 620
-    let puffMax = 700
-    let sipMin = 300
-    let sipMax = 380
-    let rightMax = 600
-    let rightMin = 520
+    let puffMin = 550
+    let puffMax = 1023
+    let sipMin = 0
+    let sipMax = 300
+    let rightMax = 530
+    let rightMin = 500
     let leftMin = 400
-    let leftMax = 480
+    let leftMax = 470
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = true
-
+        
+        var targetViews = Array<UIView>()
+        for _ in 0...8 {
+            targetViews.append(UIView())
+        }
+        for target in targetViews {
+            target.frame.size.width = screenSize.width/3
+            target.frame.size.height = screenSize.height/3
+            target.backgroundColor = getRandomColor()
+            target.alpha = 0.5
+        }
+        for i in 1...9 {
+            if i%3 == 1%3 {
+                targetViews[i-1].frame.origin.x = 0
+            } else if i%3 == 2%3 {
+                targetViews[i-1].frame.origin.x = screenSize.width/3
+            } else {
+                targetViews[i-1].frame.origin.x = screenSize.width*2/3
+            }
+            if(i<=3) {
+                targetViews[i-1].frame.origin.y = 0
+            } else if i<=6 && i>3 {
+                targetViews[i-1].frame.origin.y = screenSize.height/3
+            } else {
+                targetViews[i-1].frame.origin.y = screenSize.height*2/3
+            }
+            view.addSubview(targetViews[i-1])
+        }
+        
+        
         //setup bluetooth
         bleShield.controlSetup()
         bleShield.delegate = self
@@ -61,6 +90,18 @@ class ViewController: UIViewController, BLEDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func getRandomColor() -> UIColor{
+        
+        let randomRed:CGFloat = CGFloat(drand48())
+        
+        let randomGreen:CGFloat = CGFloat(drand48())
+        
+        let randomBlue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+        
+    }
+    
     func controlChair(value: Int) {
         switch value {
         case leftMin...leftMax:
@@ -80,17 +121,17 @@ class ViewController: UIViewController, BLEDelegate {
         var x:CGFloat
         var y:CGFloat
         if direction > 0 {
-            x = wheelchair.center.x + (moveConstant * cos(chairAngle/CGFloat(180 * M_PI)))
-            y = wheelchair.center.y + (moveConstant * sin(chairAngle/CGFloat(180 * M_PI)))
+            x = wheelchair.center.x + (moveConstant * cos(angleToRadian(chairAngle)))
+            y = wheelchair.center.y + (moveConstant * sin(angleToRadian(chairAngle)))
         } else {
-            x = wheelchair.center.x - (moveConstant * cos(chairAngle/CGFloat(180 * M_PI)))
-            y = wheelchair.center.y - (moveConstant * sin(chairAngle/CGFloat(180 * M_PI)))
+            x = wheelchair.center.x - (moveConstant * cos(angleToRadian(chairAngle)))
+            y = wheelchair.center.y - (moveConstant * sin(angleToRadian(chairAngle)))
         }
+
         if x > screenSize.width || x < 0 || y > screenSize.height || y < 0 {
             return
         }
-        
-        UIView.animateWithDuration(0.1) { () -> Void in
+        UIView.animateWithDuration(0.5) { () -> Void in
             self.wheelchair.center = CGPoint(x: x, y: y)
         }
     }
@@ -106,9 +147,13 @@ class ViewController: UIViewController, BLEDelegate {
     }
     
     func rotateByDegree(transformView: UIView, degree: CGFloat) {
-        UIView.animateWithDuration(0.1) { () -> Void in
-            transformView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI/180)*degree)
+        UIView.animateWithDuration(0.5) { () -> Void in
+            transformView.transform = CGAffineTransformMakeRotation(self.angleToRadian(degree))
         }
+    }
+    
+    func angleToRadian(angle: CGFloat)->CGFloat {
+        return angle*CGFloat(M_PI/180)
     }
     
     //Bluetooth Shield Functions
@@ -138,8 +183,7 @@ class ViewController: UIViewController, BLEDelegate {
                 print(secondValue)
                 let value = secondValue | firstValue
                 print(value)
-//                let value:UInt16 = UInt16(data[i + 2]) | UInt16(firstValue)
-//                | data[i + 1] << 8
+                controlChair(Int(value))
                 analogReading = Float(value)*5/1023
                 let s = String(value)
                 analogLabel.text = s
