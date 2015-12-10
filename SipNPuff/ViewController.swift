@@ -14,7 +14,6 @@ class ViewController: UIViewController, BLEDelegate {
     var chairAngle:CGFloat = 0
     let rotationConstant:CGFloat = 10
     let moveConstant: CGFloat = 30
-    let center = UIView()
     let bleShield = BLE()
     var rssiTimer = NSTimer()
     let analogLabel = UILabel()
@@ -78,11 +77,6 @@ class ViewController: UIViewController, BLEDelegate {
         wheelchair.frame.size.width = wheelchair.frame.size.height * wheelchair.image!.size.width / wheelchair.image!.size.height
         wheelchair.center = CGPoint(x: screenSize.midX, y: screenSize.midY)
         view.addSubview(wheelchair)
-//
-//        center.removeFromSuperview()
-//        center.frame.size = CGSize(width: 10, height: 10)
-//        center.backgroundColor = UIColor.blackColor()
-//        center.center = CGPoint(x: screenSize.midX, y: screenSize.midY)
     }
 
     override func didReceiveMemoryWarning() {
@@ -158,22 +152,12 @@ class ViewController: UIViewController, BLEDelegate {
     
     //Bluetooth Shield Functions
     func BLEShieldScan(sender: AnyObject) {
-//        if (bleShield.activePeripheral) {
-//            if bleShield.activePeripheral.state == .Connected {
-//                bleShield.CM.cancelPeripheralConnection(bleShield.activePeripheral)
-//                return
-//            }
-//        }
         bleShield.findBLEPeripherals(3)
         NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "connectionTimer:", userInfo: nil, repeats: false)
     }
     
     func bleDidReceiveData(data: UnsafeMutablePointer<UInt8>, length: Int32) {
-//        let s = NSString(data: d, encoding: NSUTF8StringEncoding)
-//        print(s!)
-//        if(String(s!) == "L") {
-//            rotateChair(1)
-//        }
+
         let l = Int(length)
         for var i = 0; i < l; i += 3 {
             if data[i] == 0x0B {
@@ -191,14 +175,6 @@ class ViewController: UIViewController, BLEDelegate {
         }
         
     }
-    
-//    func bleDidDisconnect() {
-//        NSLog("bleDidDisconnect")
-//        self.navigationItem.leftBarButtonItem.title = "Connect"
-//        activityIndicator.stopAnimating()
-//        self.navigationItem.leftBarButtonItem.enabled = true
-//        UIApplication.sharedApplication().sendAction("resignFirstResponder", to: nil, from: nil, forEvent: nil)
-//    }
     
     func bleDidDisconnect() {
         print("bleDidDisconnect")
